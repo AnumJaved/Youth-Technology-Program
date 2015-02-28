@@ -1,0 +1,42 @@
+div{
+height:300px;
+width:400px;
+background-color:#660066;
+margin-left:auto;
+margin-right:auto;
+border:15px dotted lightblue;
+
+}
+
+p{
+height:75%;
+width:75%;
+background-color:#66CCFF;
+font-family:helvetica;
+padding:20px;
+
+}
+body{
+background-color:#FF0000;
+}
+
+.blah{
+background-color:#FF33CC;
+overflow:scroll;
+}
+.boop{
+background-color:#CC99FF;
+border:25px dotted yellow;
+}
+li{
+display:inline;
+
+margin-left:10px;
+}
+ul{
+background-color:#66CCCC;
+border:10px solid yellow;
+margin-left:auto;
+margin-right:auto;
+width:500px
+}
