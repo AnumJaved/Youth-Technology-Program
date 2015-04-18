@@ -1,0 +1,41 @@
+<!Doctype html>
+<html>
+	<head>
+		<title>Our Coding Class 5</title>
+		<script type="text/JavaScript">
+			function Autobots()
+				{
+					alert(window.document.MyForm.MyTextbox.value); 
+					alert(window.document.MyForm.MyTextbox2.value);
+				}
+			function AddBoxes()
+				{
+					var num1=window.document.num.MyTextbox3.value;
+					var num2=window.document.num.MyTextbox4.value;
+					var total=(num1 * 1)+(num2 * 1)
+					alert(num1 + " + " + num2 + " = " + total)
+				}
+			
+		</script>
+	</head>
+	<body>
+	<center>
+		<h1>Autobots! Roll Out!</h1>
+	</center>
+		<form name="MyForm">
+			<input type="text" name="MyTextbox" value=""/>
+			
+			<input type="text" name="MyTextbox2" value"/><br>
+			<a href="JavaScript:Autobots()">Click On Me!!</a>
+		</form>
+		<hr><br>
+		<form name="num">
+			<input type="text" name="MyTextbox3" value"" size="6"/> &nbsp;&nbsp;
+			<input type="text" name="MyTextbox4" value"" size="6"/>
+			<a href="JavaScript:AddBoxes()">ADD</a><br><br>
+			<a href="JavaScript:AddBoxes()">SUBTRACT</a><br><br>
+			<a href="JavaScript:AddBoxes()">MULTIPLY</a><br><br>
+			<a href="JavaScript:AddBoxes()">DIVIDE</a><br><br>
+		</form>
+	</body>
+</html>

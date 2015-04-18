@@ -1,0 +1,28 @@
+<!Doctype html>
+<html>
+	<head>
+		<title></title>
+		<script type="text/JavaScript">
+		function Mustard()
+		{
+		 var x = prompt("Enter a Number");
+		 var y = prompt("Enter another number");
+		 if (x>y||x==y)
+		 {
+			alert("Sorry! Your first number is larger or equal to the second") * 1;
+			Mustard();
+		 }
+			while (x < y) 
+			{
+				alert( x + " is less than " + y);
+				x++; //this increments the number by 1 and doing x-- decrements it by 1
+			}
+			
+		}
+		
+		</script>
+	</head>
+	<body>
+	<a href="JavaScript:Mustard()">Click Here!</a>
+	</body>
+</html>

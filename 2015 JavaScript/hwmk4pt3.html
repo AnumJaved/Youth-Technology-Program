@@ -1,0 +1,23 @@
+
+<!Doctype html>
+<html>
+	<head>
+		<title></title>
+		<script type="text/JavaScript">
+			var getName = (function(){
+				var name = prompt("Please Enter Your Name");
+				return function (number) {
+					if (number)
+					{
+						alert("Hey " + name + ". You have moused over number " + number);
+					}
+				}
+			})();
+		</script>
+	</head>
+	<body onLoad="getName()">
+		<img src="red button.png" onMouseOver= "getName('1')"/><br>
+		<img src="red button 2.png" onMouseOver= "getName('2')"/><br>
+		<img src="red button 3.png" onMouseOver= "getName('3')"/><br>
+	</body>
+</html>

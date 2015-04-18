@@ -1,0 +1,32 @@
+/*Stylesheet*/
+.paragraph1{
+	font-family:Aharoni;
+	background-color:#FF0000;
+	color:#33CCFF;
+}
+
+.paragraph2{
+	font-family:Jokerman;
+	background-color:#00FFFF;
+	color:#CC0066;
+}
+
+.paragraph3{
+	font-family:Algerian;
+	background-color:#CC0066;
+	color:yellow
+}
+
+.paragraph4{
+	font-family:Showcard Gothic;
+	background-color:#00FF33;
+	color:#CC0066
+}
+#boop{
+	border:15px dotted yellow;
+}
+table{
+width:100%;
+color:#6600CC;
+padding-left:10px;
+}

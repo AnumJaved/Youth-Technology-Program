@@ -1,0 +1,25 @@
+/*CSS DOCUMENT*/
+body{
+background-color:#33CCFF;
+}
+p {
+	background-color:purple ;
+	color:#FF0099 ;
+	font-size:1em ;
+	font-weight:bold ;
+	font-family:helvetica; 	
+}
+
+h1 {
+text-decoration:underline;
+color:#FF0033;
+}
+
+table{
+width:100%;
+color:#CC3333
+}
+.paragraph2{
+	text-decoration: underline;
+	background-color:orange
+}

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+	<html>
+		<head>
+			<script type="text/javascript">
+				function mySquareRoot() 
+				{ 
+				
+					var origNum = prompt ("Please enter a number.");
+					var myNum = origNum * 10;
+		
+					myNum = Math.round (myNum);
+					myNum = myNum /10;
+					
+					alert(origNum +  " rounded to the nearest tenth is " + myNum + ".");
+				}
+				
+				function BoxPopper()
+				{
+					var theRoots = ""; 
+					
+					for(var x=0; x < 21; x++)
+					{ 
+					
+						var myNum = Math.sqrt(x);
+						myNum = (Math.round(myNum * 10))/10; 
+						
+						theRoots = theRoots + " The square root of " + x + " = " + myNum  + "\n"; 
+					}
+					alert (theRoots); 
+				}
+			</script>
+		</head>
+		<body>
+			<a href="" onClick="mySquareRoot()"> Click me to round the number! </a></br>
+			<a href="" onClick ="BoxPopper()"> Click me to find the square root of numbers 1 through 20! </a> 
+		</body>
+	</html>

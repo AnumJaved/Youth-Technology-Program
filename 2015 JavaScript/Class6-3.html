@@ -1,0 +1,25 @@
+<!Doctype html>
+<html>
+	<head>
+		<title></title>
+		<script type="text/JavaScript">
+		function NumberOfImages()
+		{
+			alert(window.document.images.length);
+		}
+		function showSource(position)
+		{
+			 alert(window.document.images[position].src);
+		}
+		</script>
+	</head>
+	<body>
+	<center>
+		<input type="text" name="imgBox" size="20" maxlength="45" value=""/>
+		<img onMouseOver="showSource(0)" src="earth.jpg"/>
+		<img onMouseOver="showSource(1)" src="lion.jpg"/>
+		<img onMouseOver="showSource(2)" src="wolf.jpg"/>
+	</center>
+	<a href="JavaScript:NumberOfImages()">Click me</a> for number of images on this page.
+	</body>
+</html>

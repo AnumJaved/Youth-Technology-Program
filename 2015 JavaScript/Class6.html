@@ -1,0 +1,32 @@
+<!Doctype html>
+<html>
+	<head>
+		<title></title>
+		<script type="text/JavaScript">
+		function Mustard()
+		{
+			x= prompt("Enter a Number");
+		while (x != 6){
+		if(x > 6)
+		{
+		document.bgColor="purple";
+		x = prompt("hey " + x + " is more than 6! Enter another number!");
+		}
+		if(x==6) 
+		{
+			document.bgColor="red";
+			alert("hey " + x + " is equal to 6!");
+		}
+		else if (x < 6)
+		{
+			document.bgColor="green";
+			x= prompt("hey " + x + " is less than 6! Enter another number!");
+		}
+		}
+		}
+		</script>
+	</head>
+	<body onLoad="JavaScript:Mustard()">
+	
+	</body>
+</html>

@@ -1,0 +1,38 @@
+<!Doctype html>
+<html>
+	<head>
+		<title></title>
+		<script type="text/JavaScript" src="jquery-2.1.3.min.js">
+		</script>
+		<script type="text/JavaScript">
+			function fruitBox()
+			{
+				alert(window.document.MyForm.fruit.value)
+			}
+			function SelectFruit(number)
+			{
+				window.document.MyForm.fruit[number].checked=true;fruitBox()
+			}
+			
+		</script>
+	</head>
+	<body>
+		<form name="MyForm">
+		<input type="radio" name="fruit" value="Oranges and Tangerines"/>
+		Oranges and Tangerines</br>
+
+		<input type="radio" name="fruit" value="Bananas"/>
+		Bananas<br>
+		
+		<input type="radio" name="fruit" value="Strawberries"/>
+		Strawberries<br>
+
+		
+			<a href="JavaScript:SelectFruit(0)">Click Here to select Oranges</a><br>
+			<br>
+			<a href="JavaScript:SelectFruit(1)">Click Here to select Bananas</a><br>
+			<br>
+			<a href="JavaScript:SelectFruit(2)">Click Here to select Strawberries</a><br>
+		</form>
+	</body>
+</html>

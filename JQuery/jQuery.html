@@ -1,0 +1,21 @@
+<!Doctype html>
+</html>
+	<head>
+		<title></title>
+		<script type="text/JavaScript" src="jquery-2.1.3.min.js">
+		</script>
+		<script type="text/JavaScript">
+			function test()
+			{
+			alert(window.document.MyGorgeousForm.MyTextbox.value);
+			alert($("#textBox").val());
+			}
+		</script>
+	</head>
+	<body>
+		<form name="MyGorgeousForm">
+			<input type="text" name="MyTextbox" id="textBox"/>
+			<input type="button" onClick="test()"/>
+		</form>
+	</body>
+</html>

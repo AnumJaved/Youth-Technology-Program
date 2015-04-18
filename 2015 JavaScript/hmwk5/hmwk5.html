@@ -1,0 +1,106 @@
+<!Doctype html>
+<html>
+	<head>
+		<title></title>
+		<script type="text/JavaScript">
+			function MathThing()
+			{
+				var num1= prompt("Hey! Go Ahead and Enter A Number!");
+				var num2= 3 
+				total=(num1 * 1)* num2
+				alert(num1 + " x " + num2 + " = " + total);
+				var num3= prompt("Whoa! You're not done yet. Enter another number!");
+				var total2=(num3 * 1) + total
+				alert("(" + num1 + " x " + num2 + ")" + " + " + num3 + " = " + total2);
+			}
+			function OtherMath()
+			{
+				var number= prompt("Hey you! Enter Any Number You Want!");
+				if (number == 100)
+				{
+					document.body.style.backgroundColor = "blue";
+					alert("Congrats! Your number is exactly 100! Way to go!");
+				}
+				else if (number > 100 && number < 500)
+				{
+					document.body.style.backgroundColor = "green";
+					alert("Oops! Your number is a bit too big for me!");
+				}
+				else if (number >= 500)
+				{
+					document.body.style.backgroundColor = "red";
+					alert("Whoa! Your number is far too large! Try lowering it a bit!");
+				}
+				else 
+				{
+					document.body.style.backgroundColor = "yellow"
+					alert("Oh no! Your number is " + number + "! That's too small!");
+				}
+			}
+			function Decepticons()
+			{
+				bruh = prompt("Enter Whatever You Please");
+				document.getElementsByName("MyTextbox")[0].value = bruh;
+				alert(window.document.MyForm.MyTextbox.value);
+			}
+			function AddBoxes()
+			{
+			var num1=document.getElementsByName("MyTextbox2")[0].value;
+			
+			var num2=document.getElementsByName("MyTextbox3")[0].value;	
+			var total=(num1 * 1) + (num2 * 1);
+			document.getElementsByName("MyTextbox4")[0].value = total; 
+			document.getElementsByName("MyTextbox5")[0].value = "+";
+			}
+			function SubBoxes()
+			{
+				var num1=document.getElementsByName("MyTextbox2")[0].value;
+				var num2=document.getElementsByName("MyTextbox3")[0].value;
+				var total=(num1 * 1) - (num2 * 1);
+				document.getElementsByName("MyTextbox4")[0].value = total;
+				document.getElementsByName("MyTextbox5")[0].value = "-"
+				
+			}
+			function MultBoxes()
+			{
+				var num1=document.getElementsByName("MyTextbox2")[0].value;
+				var num2=document.getElementsByName("MyTextbox3")[0].value;
+				var total=(num1 * 1) * (num2 * 1);
+				document.getElementsByName("MyTextbox4")[0].value = total;
+				document.getElementsByName("MyTextbox5")[0].value = "*"
+			}
+			function DivBoxes()
+			{
+				var num1=document.getElementsByName("MyTextbox2")[0].value;
+				var num2=document.getElementsByName("MyTextbox3")[0].value;
+				var total=(num1 * 1) / (num2 * 1);
+				document.getElementsByName("MyTextbox4")[0].value = total;
+				document.getElementsByName("MyTextbox5")[0].value = "/"
+			}
+		</script>
+	</head>
+	<body>
+	<br>
+	<a href="JavaScript:MathThing()">Pssstt! CLICK HERE!</a>
+	<hr><br>
+	<a href="JavaScript:OtherMath()">you there! yeah, you! Click Me!</a>
+	<br><hr>
+	
+	<form name="MyForm">
+		<input type="text" name="MyTextbox" value""/>
+		<input type="button" onClick="Decepticons()"/>
+		<br><hr>
+	</form>
+	<form>
+		<input type="text" name="MyTextbox2" value"" size="6"/>
+		<input type="text" name="MyTextbox5" value"" size="6"/>
+		<input type="text" name="MyTextbox3" value"" size="6"/> = 
+		<input type="text" name="MyTextbox4" value"" size="6"/><br>
+
+		<a href="JavaScript:AddBoxes()">ADD</a><br><br>
+		<a href="JavaScript:SubBoxes()">SUBTRACT</a><br><br>
+		<a href="JavaScript:MultBoxes()">MULTIPLY</a><br><br>
+		<a href="JavaScript:DivBoxes()">DIVIDE</a><br><br>
+	</form>
+	</body>
+</html>
